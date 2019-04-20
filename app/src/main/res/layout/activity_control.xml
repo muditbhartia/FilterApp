@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="@android:color/white"
+    tools:context=".ControlActivity"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+
+    <ImageView
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="459dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:src="@drawable/img1" />
+
+    <LinearLayout
+        android:id="@+id/controlLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/uncheck" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/seekbar_layer"
+            android:thumb="@drawable/progress_thumb" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/check" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thumbnailLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/controlLinearLayout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/effect1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/effect2" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/effect3" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/effect4" />
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
